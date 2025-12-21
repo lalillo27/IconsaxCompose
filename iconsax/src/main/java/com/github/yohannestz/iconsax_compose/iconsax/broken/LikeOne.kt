@@ -1,0 +1,65 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val LikeOne: ImageVector
+    get() {
+        val current = _likeOne
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.LikeOne",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineMiter = 10.0f,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 21.48f, y = 11.95f)
+                curveToRelative(dx1 = 0.5f, dy1 = -1.4f, dx2 = -0.4f, dy2 = -2.6f, dx3 = -1.9f, dy3 = -2.6f)
+                horizontalLineToRelative(dx = -4.0f)
+                arcToRelative(a = 1.0f, b = 1.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -1.0f, dy1 = -1.2f)
+                lineToRelative(dx = 0.5f, dy = -3.2f)
+                curveToRelative(dx1 = 0.2f, dy1 = -0.9f, dx2 = -0.4f, dy2 = -1.9f, dx3 = -1.3f, dy3 = -2.2f)
+                arcToRelative(a = 2.0f, b = 2.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = -2.2f, dy1 = 0.7f)
+                lineToRelative(dx = -4.1f, dy = 6.1f)
+                moveToRelative(dx = 0.0f, dy = 8.8f)
+                lineToRelative(dx = 3.1f, dy = 2.4f)
+                curveToRelative(dx1 = 0.4f, dy1 = 0.4f, dx2 = 1.3f, dy2 = 0.6f, dx3 = 1.9f, dy3 = 0.6f)
+                horizontalLineToRelative(dx = 3.8f)
+                curveToRelative(dx1 = 1.2f, dy1 = 0.0f, dx2 = 2.5f, dy2 = -0.9f, dx3 = 2.8f, dy3 = -2.1f)
+                lineToRelative(dx = 1.24f, dy = -3.77f)
+            }
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 2.38f, y = 18.35f)
+                verticalLineToRelative(dy = -9.8f)
+                curveToRelative(dx1 = 0.0f, dy1 = -1.4f, dx2 = 0.6f, dy2 = -1.9f, dx3 = 2.0f, dy3 = -1.9f)
+                horizontalLineToRelative(dx = 1.0f)
+                curveToRelative(dx1 = 1.4f, dy1 = 0.0f, dx2 = 2.0f, dy2 = 0.5f, dx3 = 2.0f, dy3 = 1.9f)
+                verticalLineToRelative(dy = 9.8f)
+                curveToRelative(dx1 = 0.0f, dy1 = 1.4f, dx2 = -0.6f, dy2 = 1.9f, dx3 = -2.0f, dy3 = 1.9f)
+                horizontalLineToRelative(dx = -1.0f)
+                curveToRelative(dx1 = -1.4f, dy1 = 0.0f, dx2 = -2.0f, dy2 = -0.5f, dx3 = -2.0f, dy3 = -1.9f)
+            }
+        }.build().also { _likeOne = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _likeOne: ImageVector? = null

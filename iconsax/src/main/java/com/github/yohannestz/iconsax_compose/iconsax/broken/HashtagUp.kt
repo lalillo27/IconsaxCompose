@@ -1,0 +1,56 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val HashtagUp: ImageVector
+    get() {
+        val current = _hashtagUp
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.HashtagUp",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 2.0f, y = 13.04f)
+                verticalLineTo(y = 15.0f)
+                curveToRelative(dx1 = 0.0f, dy1 = 5.0f, dx2 = 2.0f, dy2 = 7.0f, dx3 = 7.0f, dy3 = 7.0f)
+                horizontalLineToRelative(dx = 6.0f)
+                moveToRelative(dx = 7.0f, dy = -9.0f)
+                verticalLineTo(y = 9.0f)
+                curveToRelative(dx1 = 0.0f, dy1 = -5.0f, dx2 = -2.0f, dy2 = -7.0f, dx3 = -7.0f, dy3 = -7.0f)
+                horizontalLineTo(x = 9.0f)
+                curveTo(x1 = 4.0f, y1 = 2.0f, x2 = 2.0f, y2 = 4.0f, x3 = 2.0f, y3 = 9.0f)
+                moveToRelative(dx = 17.0f, dy = 13.0f)
+                verticalLineToRelative(dy = -6.0f)
+                lineToRelative(dx = -2.0f, dy = 2.0f)
+                moveToRelative(dx = 2.0f, dy = -2.0f)
+                lineToRelative(dx = 2.0f, dy = 2.0f)
+                moveTo(x = 9.95f, y = 6.26f)
+                lineTo(x = 8.9f, y = 15.73f)
+                moveToRelative(dx = 4.21f, dy = -9.47f)
+                lineToRelative(dx = -1.05f, dy = 9.47f)
+                moveToRelative(dx = -5.53f, dy = -6.3f)
+                horizontalLineTo(x = 16.0f)
+                moveTo(x = 6.0f, y = 12.57f)
+                horizontalLineToRelative(dx = 9.47f)
+            }
+        }.build().also { _hashtagUp = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _hashtagUp: ImageVector? = null

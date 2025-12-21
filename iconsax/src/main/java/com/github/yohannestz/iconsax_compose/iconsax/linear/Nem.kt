@@ -1,0 +1,52 @@
+package com.github.yohannestz.iconsax_compose.iconsax.linear
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val Nem: ImageVector
+    get() {
+        val current = _nem
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.Nem",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF17191C)),
+                strokeLineMiter = 10.0f,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 2.0f, y = 5.0f)
+                reflectiveCurveToRelative(dx1 = 10.0f, dy1 = -6.0f, dx2 = 20.0f, dy2 = 0.0f)
+                curveToRelative(dx1 = 0.0f, dy1 = 0.0f, dx2 = 0.0f, dy2 = 11.0f, dx3 = -10.0f, dy3 = 17.0f)
+                curveToRelative(dx1 = 0.0f, dy1 = 0.0f, dx2 = -10.0f, dy2 = -5.0f, dx3 = -10.0f, dy3 = -17.0f)
+                close()
+            }
+            path(
+                stroke = SolidColor(Color(0xFF17191C)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineMiter = 10.0f,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 2.1f, y = 7.1f)
+                curveTo(x1 = 5.2f, y1 = 17.1f, x2 = 12.0f, y2 = 10.0f, x3 = 12.0f, y3 = 10.0f)
+                curveToRelative(dx1 = -1.0f, dy1 = -6.0f, dx2 = 4.1f, dy2 = -7.1f, dx3 = 4.1f, dy3 = -7.1f)
+                lineToRelative(dx = 0.6f, dy = -0.1f)
+                moveToRelative(dx = -0.3f, dy = 15.7f)
+                reflectiveCurveTo(x1 = 19.0f, y1 = 13.0f, x2 = 12.0f, y2 = 10.0f)
+            }
+        }.build().also { _nem = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _nem: ImageVector? = null

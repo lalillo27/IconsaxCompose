@@ -1,0 +1,71 @@
+package com.github.yohannestz.iconsax_compose.iconsax.bulk
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val Additem: ImageVector
+    get() {
+        val current = _additem
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.Additem",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+                fillAlpha = 0.4f,
+                strokeAlpha = 0.4f,
+            ) {
+                moveTo(x = 18.57f, y = 22.0f)
+                horizontalLineTo(x = 14.0f)
+                quadToRelative(dx1 = -3.43f, dy1 = 0.0f, dx2 = -3.43f, dy2 = -3.43f)
+                verticalLineToRelative(dy = -7.14f)
+                quadTo(x1 = 10.57f, y1 = 8.0f, x2 = 14.0f, y2 = 8.0f)
+                horizontalLineToRelative(dx = 4.57f)
+                quadTo(x1 = 22.0f, y1 = 8.0f, x2 = 22.0f, y2 = 11.43f)
+                verticalLineToRelative(dy = 7.14f)
+                quadTo(x1 = 22.0f, y1 = 22.0f, x2 = 18.57f, y2 = 22.0f)
+            }
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+            ) {
+                moveTo(x = 13.43f, y = 5.43f)
+                verticalLineToRelative(dy = 1.34f)
+                curveToRelative(dx1 = -2.62f, dy1 = 0.21f, dx2 = -4.11f, dy2 = 1.89f, dx3 = -4.11f, dy3 = 4.66f)
+                verticalLineTo(y = 16.0f)
+                horizontalLineTo(x = 5.43f)
+                quadTo(x1 = 2.0f, y1 = 16.0f, x2 = 2.0f, y2 = 12.57f)
+                verticalLineTo(y = 5.43f)
+                quadTo(x1 = 2.0f, y1 = 2.0f, x2 = 5.43f, y2 = 2.0f)
+                horizontalLineTo(x = 10.0f)
+                quadToRelative(dx1 = 3.43f, dy1 = 0.0f, dx2 = 3.43f, dy2 = 3.43f)
+                moveToRelative(dx = 4.7f, dy = 8.82f)
+                horizontalLineToRelative(dx = -0.88f)
+                verticalLineToRelative(dy = -0.88f)
+                curveToRelative(dx1 = 0.0f, dy1 = -0.4f, dx2 = -0.34f, dy2 = -0.75f, dx3 = -0.75f, dy3 = -0.75f)
+                reflectiveCurveToRelative(dx1 = -0.75f, dy1 = 0.34f, dx2 = -0.75f, dy2 = 0.75f)
+                verticalLineToRelative(dy = 0.88f)
+                horizontalLineToRelative(dx = -0.88f)
+                curveToRelative(dx1 = -0.41f, dy1 = 0.0f, dx2 = -0.75f, dy2 = 0.34f, dx3 = -0.75f, dy3 = 0.75f)
+                reflectiveCurveToRelative(dx1 = 0.34f, dy1 = 0.75f, dx2 = 0.75f, dy2 = 0.75f)
+                horizontalLineToRelative(dx = 0.88f)
+                verticalLineToRelative(dy = 0.88f)
+                curveToRelative(dx1 = 0.0f, dy1 = 0.41f, dx2 = 0.34f, dy2 = 0.75f, dx3 = 0.75f, dy3 = 0.75f)
+                reflectiveCurveToRelative(dx1 = 0.75f, dy1 = -0.34f, dx2 = 0.75f, dy2 = -0.75f)
+                verticalLineToRelative(dy = -0.88f)
+                horizontalLineToRelative(dx = 0.88f)
+                curveToRelative(dx1 = 0.41f, dy1 = 0.0f, dx2 = 0.75f, dy2 = -0.34f, dx3 = 0.75f, dy3 = -0.75f)
+                reflectiveCurveToRelative(dx1 = -0.34f, dy1 = -0.75f, dx2 = -0.75f, dy2 = -0.75f)
+            }
+        }.build().also { _additem = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _additem: ImageVector? = null

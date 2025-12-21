@@ -1,0 +1,74 @@
+package com.github.yohannestz.iconsax_compose.iconsax.bulk
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val ColorsSquare: ImageVector
+    get() {
+        val current = _colorsSquare
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.ColorsSquare",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+                fillAlpha = 0.4f,
+                strokeAlpha = 0.4f,
+            ) {
+                moveTo(x = 16.19f, y = 2.0f)
+                horizontalLineTo(x = 7.82f)
+                curveTo(x1 = 4.17f, y1 = 2.0f, x2 = 2.0f, y2 = 4.17f, x3 = 2.0f, y3 = 7.81f)
+                verticalLineToRelative(dy = 8.37f)
+                curveToRelative(dx1 = 0.0f, dy1 = 3.64f, dx2 = 2.17f, dy2 = 5.81f, dx3 = 5.81f, dy3 = 5.81f)
+                horizontalLineToRelative(dx = 8.37f)
+                curveToRelative(dx1 = 3.64f, dy1 = 0.0f, dx2 = 5.81f, dy2 = -2.17f, dx3 = 5.81f, dy3 = -5.81f)
+                verticalLineTo(y = 7.81f)
+                curveTo(x1 = 22.0f, y1 = 4.17f, x2 = 19.83f, y2 = 2.0f, x3 = 16.19f, y3 = 2.0f)
+            }
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+                fillAlpha = 0.6f,
+                strokeAlpha = 0.6f,
+            ) {
+                moveTo(x = 13.2f, y = 14.4f)
+                arcTo(horizontalEllipseRadius = 3.6f, verticalEllipseRadius = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 9.6f, y1 = 18.0f)
+                arcToRelative(a = 3.6f, b = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -0.95f, dy1 = -7.07f)
+                arcTo(horizontalEllipseRadius = 3.6f, verticalEllipseRadius = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, x1 = 12.0f, y1 = 13.21f)
+                arcToRelative(a = 3.0f, b = 3.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 0.95f, dy1 = -0.13f)
+                arcToRelative(a = 4.0f, b = 4.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = 0.25f, dy1 = 1.32f)
+            }
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+            ) {
+                moveTo(x = 15.6f, y = 9.6f)
+                arcToRelative(a = 4.0f, b = 4.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -0.25f, dy1 = 1.33f)
+                arcTo(horizontalEllipseRadius = 3.6f, verticalEllipseRadius = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 12.0f, y1 = 13.21f)
+                arcToRelative(a = 3.0f, b = 3.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -0.95f, dy1 = -0.13f)
+                arcTo(horizontalEllipseRadius = 3.6f, verticalEllipseRadius = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 8.4f, y1 = 9.6f)
+                arcToRelative(a = 3.6f, b = 3.6f, theta = 0.0f, isMoreThanHalf = true, isPositiveArc = true, dx1 = 7.2f, dy1 = 0.0f)
+            }
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+                fillAlpha = 0.4f,
+                strokeAlpha = 0.4f,
+            ) {
+                moveTo(x = 18.0f, y = 14.4f)
+                arcToRelative(a = 3.6f, b = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -6.0f, dy1 = 2.68f)
+                arcToRelative(a = 3.6f, b = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 1.2f, dy1 = -2.68f)
+                arcToRelative(a = 4.0f, b = 4.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = -0.25f, dy1 = -1.33f)
+                arcToRelative(a = 3.6f, b = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 2.4f, dy1 = -2.15f)
+                arcTo(horizontalEllipseRadius = 3.6f, verticalEllipseRadius = 3.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 18.0f, y1 = 14.4f)
+            }
+        }.build().also { _colorsSquare = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _colorsSquare: ImageVector? = null

@@ -1,0 +1,46 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val SearchStatusOne: ImageVector
+    get() {
+        val current = _searchStatusOne
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.SearchStatusOne",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 2.0f, y = 11.0f)
+                arcToRelative(a = 9.0f, b = 9.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = 9.0f, dy1 = -9.0f)
+                moveToRelative(dx = 9.0f, dy = 9.0f)
+                arcToRelative(a = 9.0f, b = 9.0f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -17.08f, dy1 = 3.97f)
+                moveTo(x = 14.0f, y = 5.0f)
+                horizontalLineToRelative(dx = 6.0f)
+                moveToRelative(dx = -6.0f, dy = 3.0f)
+                horizontalLineToRelative(dx = 3.0f)
+                moveToRelative(dx = 2.07f, dy = 12.97f)
+                curveToRelative(dx1 = 0.53f, dy1 = 1.6f, dx2 = 1.74f, dy2 = 1.76f, dx3 = 2.67f, dy3 = 0.36f)
+                curveToRelative(dx1 = 0.86f, dy1 = -1.28f, dx2 = 0.3f, dy2 = -2.33f, dx3 = -1.24f, dy3 = -2.33f)
+                curveToRelative(dx1 = -1.15f, dy1 = 0.0f, dx2 = -1.79f, dy2 = 0.89f, dx3 = -1.43f, dy3 = 1.97f)
+            }
+        }.build().also { _searchStatusOne = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _searchStatusOne: ImageVector? = null

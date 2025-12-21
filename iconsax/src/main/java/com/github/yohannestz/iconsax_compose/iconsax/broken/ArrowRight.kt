@@ -1,0 +1,42 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val ArrowRight: ImageVector
+    get() {
+        val current = _arrowRight
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.ArrowRight",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineMiter = 10.0f,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 14.43f, y = 5.93f)
+                lineTo(x = 20.5f, y = 12.0f)
+                lineToRelative(dx = -6.07f, dy = 6.07f)
+                moveTo(x = 11.01f, y = 12.0f)
+                horizontalLineToRelative(dx = 9.32f)
+                moveTo(x = 3.5f, y = 12.0f)
+                horizontalLineToRelative(dx = 3.47f)
+            }
+        }.build().also { _arrowRight = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _arrowRight: ImageVector? = null

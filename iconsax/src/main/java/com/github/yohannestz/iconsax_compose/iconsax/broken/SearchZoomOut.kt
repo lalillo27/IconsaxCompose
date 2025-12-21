@@ -1,0 +1,42 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val SearchZoomOut: ImageVector
+    get() {
+        val current = _searchZoomOut
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.SearchZoomOut",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 8.5f, y = 11.0f)
+                horizontalLineToRelative(dx = 5.0f)
+                moveTo(x = 11.0f, y = 2.0f)
+                arcToRelative(a = 9.0f, b = 9.0f, theta = 0.0f, isMoreThanHalf = true, isPositiveArc = true, dx1 = -4.07f, dy1 = 0.97f)
+                moveToRelative(dx = 12.14f, dy = 18.0f)
+                curveToRelative(dx1 = 0.53f, dy1 = 1.6f, dx2 = 1.74f, dy2 = 1.76f, dx3 = 2.67f, dy3 = 0.36f)
+                curveToRelative(dx1 = 0.86f, dy1 = -1.28f, dx2 = 0.3f, dy2 = -2.33f, dx3 = -1.24f, dy3 = -2.33f)
+                curveToRelative(dx1 = -1.15f, dy1 = 0.0f, dx2 = -1.79f, dy2 = 0.89f, dx3 = -1.43f, dy3 = 1.97f)
+            }
+        }.build().also { _searchZoomOut = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _searchZoomOut: ImageVector? = null

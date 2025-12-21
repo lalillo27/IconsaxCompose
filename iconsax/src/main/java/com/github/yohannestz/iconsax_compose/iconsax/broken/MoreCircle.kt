@@ -1,0 +1,49 @@
+package com.github.yohannestz.iconsax_compose.iconsax.broken
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val MoreCircle: ImageVector
+    get() {
+        val current = _moreCircle
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.MoreCircle",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 4.0f, y = 6.0f)
+                arcToRelative(a = 10.0f, b = 10.0f, theta = 0.0f, isMoreThanHalf = true, isPositiveArc = false, dx1 = 3.97f, dy1 = -3.15f)
+            }
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 2.0f,
+            ) {
+                moveTo(x = 16.0f, y = 12.0f)
+                close()
+                moveToRelative(dx = -4.0f, dy = 0.0f)
+                close()
+                moveToRelative(dx = -4.0f, dy = 0.0f)
+                close()
+            }
+        }.build().also { _moreCircle = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _moreCircle: ImageVector? = null

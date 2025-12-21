@@ -1,0 +1,65 @@
+package com.github.yohannestz.iconsax_compose.iconsax.bold
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val Pharagraphspacing: ImageVector
+    get() {
+        val current = _pharagraphspacing
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.Pharagraphspacing",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF292D32)),
+            ) {
+                moveTo(x = 21.0f, y = 22.75f)
+                horizontalLineTo(x = 3.0f)
+                curveToRelative(dx1 = -0.41f, dy1 = 0.0f, dx2 = -0.75f, dy2 = -0.34f, dx3 = -0.75f, dy3 = -0.75f)
+                reflectiveCurveTo(x1 = 2.59f, y1 = 21.25f, x2 = 3.0f, y2 = 21.25f)
+                horizontalLineToRelative(dx = 18.0f)
+                curveToRelative(dx1 = 0.41f, dy1 = 0.0f, dx2 = 0.75f, dy2 = 0.34f, dx3 = 0.75f, dy3 = 0.75f)
+                reflectiveCurveToRelative(dx1 = -0.34f, dy1 = 0.75f, dx2 = -0.75f, dy2 = 0.75f)
+                moveToRelative(dx = 0.0f, dy = -20.0f)
+                horizontalLineTo(x = 3.0f)
+                curveTo(x1 = 2.59f, y1 = 2.75f, x2 = 2.25f, y2 = 2.41f, x3 = 2.25f, y3 = 2.0f)
+                reflectiveCurveTo(x1 = 2.59f, y1 = 1.25f, x2 = 3.0f, y2 = 1.25f)
+                horizontalLineToRelative(dx = 18.0f)
+                curveToRelative(dx1 = 0.41f, dy1 = 0.0f, dx2 = 0.75f, dy2 = 0.34f, dx3 = 0.75f, dy3 = 0.75f)
+                reflectiveCurveTo(x1 = 21.41f, y1 = 2.75f, x2 = 21.0f, y2 = 2.75f)
+                moveToRelative(dx = -6.7f, dy = 12.6f)
+                lineToRelative(dx = -1.55f, dy = 1.56f)
+                verticalLineTo(y = 6.7f)
+                lineToRelative(dx = 1.55f, dy = 1.55f)
+                quadToRelative(dx1 = 0.23f, dy1 = 0.22f, dx2 = 0.53f, dy2 = 0.22f)
+                curveToRelative(dx1 = 0.3f, dy1 = 0.0f, dx2 = 0.38f, dy2 = -0.07f, dx3 = 0.53f, dy3 = -0.22f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 0.0f, dy1 = -1.06f)
+                lineToRelative(dx = -2.83f, dy = -2.83f)
+                arcToRelative(a = 0.77f, b = 0.77f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = -1.06f, dy1 = 0.0f)
+                lineTo(x = 8.64f, y = 7.19f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 0.0f, dy1 = 1.06f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 1.06f, dy1 = 0.0f)
+                lineToRelative(dx = 1.55f, dy = -1.55f)
+                verticalLineToRelative(dy = 10.2f)
+                lineTo(x = 9.7f, y = 15.37f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = -1.06f, dy1 = 0.0f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 0.0f, dy1 = 1.06f)
+                lineToRelative(dx = 2.83f, dy = 2.83f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 1.06f, dy1 = 0.0f)
+                lineToRelative(dx = 2.83f, dy = -2.83f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = 0.0f, dy1 = -1.06f)
+                arcToRelative(a = 0.75f, b = 0.75f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = false, dx1 = -1.06f, dy1 = 0.0f)
+            }
+        }.build().also { _pharagraphspacing = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _pharagraphspacing: ImageVector? = null

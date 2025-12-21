@@ -1,0 +1,72 @@
+package com.github.yohannestz.iconsax_compose.iconsax.twotone
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+
+val QuoteDown: ImageVector
+    get() {
+        val current = _quoteDown
+        if (current != null) return current
+
+        return ImageVector.Builder(
+            name = "com.github.yohannestz.iconsax_compose.iconsax.IconsaxTheme.QuoteDown",
+            defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f,
+            viewportHeight = 24.0f,
+        ).apply {
+            path(
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 22.0f, y = 11.65f)
+                horizontalLineToRelative(dx = -5.8f)
+                arcToRelative(a = 2.5f, b = 2.5f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = -2.58f, dy1 = -2.58f)
+                verticalLineTo(y = 5.85f)
+                arcToRelative(a = 2.5f, b = 2.5f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = 2.58f, dy1 = -2.58f)
+                horizontalLineToRelative(dx = 3.22f)
+                arcTo(horizontalEllipseRadius = 2.6f, verticalEllipseRadius = 2.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 22.0f, y1 = 5.85f)
+                close()
+                moveToRelative(dx = 0.0f, dy = 0.0f)
+                curveToRelative(dx1 = 0.0f, dy1 = 6.05f, dx2 = -1.13f, dy2 = 7.05f, dx3 = -4.53f, dy3 = 9.07f)
+            }
+            path(
+                fillAlpha = 0.4f,
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeAlpha = 0.4f,
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 10.37f, y = 11.65f)
+                horizontalLineToRelative(dx = -5.8f)
+                arcTo(horizontalEllipseRadius = 2.5f, verticalEllipseRadius = 2.5f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, x1 = 2.0f, y1 = 9.07f)
+                verticalLineTo(y = 5.85f)
+                arcToRelative(a = 2.5f, b = 2.5f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = 2.58f, dy1 = -2.58f)
+                horizontalLineTo(x = 7.8f)
+                arcToRelative(a = 2.6f, b = 2.6f, theta = 0.0f, isMoreThanHalf = false, isPositiveArc = true, dx1 = 2.58f, dy1 = 2.58f)
+                verticalLineToRelative(dy = 5.8f)
+            }
+            path(
+                fillAlpha = 0.4f,
+                stroke = SolidColor(Color(0xFF292D32)),
+                strokeAlpha = 0.4f,
+                strokeLineCap = StrokeCap.Round,
+                strokeLineJoin = StrokeJoin.Round,
+                strokeLineWidth = 1.5f,
+            ) {
+                moveTo(x = 10.37f, y = 11.65f)
+                curveToRelative(dx1 = 0.0f, dy1 = 6.05f, dx2 = -1.13f, dy2 = 7.05f, dx3 = -4.53f, dy3 = 9.07f)
+            }
+        }.build().also { _quoteDown = it }
+    }
+
+@Suppress("ObjectPropertyName")
+private var _quoteDown: ImageVector? = null
