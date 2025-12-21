@@ -6,7 +6,6 @@ A lightweight **Jetpack Compose icon library** providing the complete **Iconsax*
 
 Designed to feel native to Compose while staying simple, fast, and dependency-light.
 
----
 
 ## Preview 
 
@@ -20,7 +19,6 @@ Designed to feel native to Compose while staying simple, fast, and dependency-li
 * Minimal overhead — pure Kotlin + Compose
 * Works with **Material 3** (and Material 2–style themes)
 
----
 
 ## Module Scope
 
@@ -31,7 +29,6 @@ This repository contains:
 
 This README documents the **library**, not the sample application.
 
----
 
 ## Installation (JitPack)
 
@@ -63,7 +60,6 @@ Replace `<version>` with:
 
 Latest version is shown in the badge above.
 
----
 
 ## Icon Styles
 
@@ -140,7 +136,6 @@ CompositionLocalProvider(
 }
 ```
 
----
 
 ## Icon Generation
 
@@ -199,8 +194,6 @@ iconsaxcompose/
 
 Each icon is generated as an `ImageVector` and grouped by style.
 
----
-
 ## Design Goals
 
 * **Predictable API** — no magic strings
@@ -209,8 +202,6 @@ Each icon is generated as an `ImageVector` and grouped by style.
 * **Library-first** — no app assumptions, no UI coupling
 * **Generated, not handwritten** — reproducible and auditable output
 
----
-
 ## Notes
 
 * This library bundles **icons only**, not UI components
@@ -218,15 +209,11 @@ Each icon is generated as an `ImageVector` and grouped by style.
 * Safe for production use
 * Generated code should not be edited manually
 
----
-
 ## License
 
 Iconsax icons are subject to the **Iconsax license**.
 
 This project provides a Jetpack Compose wrapper and generated bindings only and does not claim ownership of the underlying icon designs.
-
----
 
 ## Contributing
 
