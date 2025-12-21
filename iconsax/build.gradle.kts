@@ -44,7 +44,6 @@ val modulePackage = "com.github.yohannestz.iconsax_compose.iconsax"
 val outputRoot = file("src/main/java/${modulePackage.replace(".", "/")}")
 
 fun sanitizeIconName(name: String): String {
-    // Replace invalid chars with _, prefix _ if starts with digit
     val safe = name.replace(Regex("[^A-Za-z0-9_]"), "_")
     return if (safe.firstOrNull()?.isDigit() == true) "_$safe" else safe
 }
